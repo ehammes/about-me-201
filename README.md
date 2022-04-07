@@ -11,3 +11,5 @@
 - Referred to W3 schools for CSS styling
 
 ### Reflections
+
+- For the April 7th lab, I was the driver of my code (due to timing) for the updates.
