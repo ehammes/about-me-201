@@ -58,20 +58,3 @@ if(questionFive === 'yes' || questionTwo === 'y'){
 } else {
   alert('Please enter responses with a yes or no.');
 }
-
-// collaborated with Vinny, David, Katharine, and Vinny
-let attempts = 4;
-
-for(let i = 0; i < attempts; i++) {
-  let correctAnswer = 12;
-  let questionSix = prompt('Can you guess my favorite number?');
-  if (questionSix === correctAnswer){
-    alert (`${aboutmeVisitor}, that is correct!`);
-  } else if ((questionSix > correctAnswer) && (i <= attempts-2)){
-    alert (`${aboutmeVisitor}, that number is too high. Please try again.`);
-  } else if ((questionSix < correctAnswer) && (i <= attempts-2)){
-    alert (`${aboutmeVisitor}, that number is too low. Please try again.`);
-  } else {
-    alert (`${aboutmeVisitor},that was your last attempt. The correct answer is 12.`);
-  }
-}
