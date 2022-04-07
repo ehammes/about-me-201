@@ -73,7 +73,7 @@ for(let i = 0; i < 4; i++) {
   } else if (questionSix < correctAnswer){
     alert (`${aboutmeVisitor}, that number is too low. Please try again.`);
   } if (i === 3 && questionSix !== correctAnswer) {
-    alert (`${aboutmeVisitor},that was your last attempt. The correct answer is 12.`);
+    alert (`${aboutmeVisitor}, that was your last attempt. The correct answer was 12.`);
   }
 }
 
