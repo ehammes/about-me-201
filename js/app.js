@@ -60,34 +60,36 @@ if(questionFive === 'yes' || questionTwo === 'y'){
 }
 
 // collaborated with Guy, David, Katharine, and Vinny on the below for lab03
-let attempts = 4;
+let correctAnswer = 12;
 
-for(let i = 0; i < attempts; i++) {
-  let correctAnswer = 12;
-  let questionSix = prompt('Can you guess my favorite number?');
+for(let i = 0; i < 4; i++) {
+  let questionSix = parseInt(prompt('Can you guess my favorite number?'));
+  //console.log(questionSix);
   if (questionSix === correctAnswer){
     alert (`${aboutmeVisitor}, that is correct!`);
-  } else if ((questionSix > correctAnswer) && (i <= attempts-2)){
+    break;
+  } else if (questionSix > correctAnswer){
     alert (`${aboutmeVisitor}, that number is too high. Please try again.`);
-  } else if ((questionSix < correctAnswer) && (i <= attempts-2)){
+  } else if (questionSix < correctAnswer){
     alert (`${aboutmeVisitor}, that number is too low. Please try again.`);
-  } else {
+  } if (i === 3 && questionSix !== correctAnswer) {
     alert (`${aboutmeVisitor},that was your last attempt. The correct answer is 12.`);
   }
 }
 
 let statesAnswer = ['washington', 'california', 'illinois', 'ohio', 'south carolina'];
 
-for(let i = 0; i < 7; i++) {
+for(let i = 0; i < 6; i++){
   let questionSeven = prompt('Name a state that I have lived in.').toLowerCase();
-  if (questionSeven === (statesAnswer[0] || statesAnswer[1] || statesAnswer[2] || statesAnswer[3] || statesAnswer[4])){
-    alert(`${aboutmeVisitor}, that is correct!`);
-    break;
-  } else if ((questionSeven !== (statesAnswer[0] || statesAnswer[1] || statesAnswer[2] || statesAnswer[3] || statesAnswer[4]) && (i <= 5))){
-    alert(`${aboutmeVisitor}, that is incorrect. Please try again.`);
-  } else {
-    alert(`${aboutmeVisitor},that was your last attempt. The correct answers are ${statesAnswer}`);
+  for(let j = 0; j < statesAnswer.length; j++){
+    if (questionSeven === statesAnswer[j]){
+      alert(`${aboutmeVisitor}, that is correct!`);
+      i = 6;
+      break;
+    }
   }
 }
 
-alert (`${aboutmeVisitor} you got X number of questions right`);
+alert(`I have lived in the following places: ${statesAnswer}`);
+
+alert(`${aboutmeVisitor} you got X number of questions right!`);
