@@ -38,16 +38,16 @@ h3 {
 div {
   padding: 5px;
   font-size: 15px;
-  font-weight: bold;
   text-align: center;
+  display: inline-block;
 }
 
 .about {
-  display: inline-block;
   padding: 5px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+  display: inline-block;
 }
 
 p {
@@ -61,11 +61,16 @@ p {
 ul {
   padding: 5px;
   font-size: 15px;
+  border: 2px solid navy;
+  list-style-position: inside;
+  list-style: disc;
 }
 
 ol {
   padding: 5px;
   font-size: 15px;
+  list-style-position: inside;
+  list-style: disc;
 }
 
 img {
