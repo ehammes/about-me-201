@@ -1,19 +1,9 @@
 * {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: floralwhite;
   margin: 15px;
   padding: 5px;
-}
-
-div {
-  display: inline-block;
-  padding: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  border: 2px solid navy;
-  text-align: center;
-  background-color: rgb(157, 216, 255);
-  overflow: scroll;
+  color: black;
 }
 
 header {
@@ -26,19 +16,56 @@ header {
   margin: 15px;
 }
 
-h1 {
-  color: navy;
+h2 {
+  background-color: rgb(157, 216, 255);
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid navy;
+  border-width: 3px;
+}
+
+h3 {
+  background-color: rgb(157, 216, 255);
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid navy;
+  border-width: 3px;
+}
+
+div {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
 }
 
-body {
-  color: black;
+.about {
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
 }
 
 p {
-  padding: 10px;
+  padding: 5px;
   font-size: 15px;
+  font-weight: bold;
+  text-align: center;
   border: 2px solid navy;
+}
+
+ul {
+  padding: 5px;
+  font-size: 15px;
+}
+
+ol {
+  padding: 5px;
+  font-size: 15px;
 }
 
 img {
@@ -51,12 +78,7 @@ img {
 }
 
 section {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding: 5px;
-  border: 2px solid navy;
-  border-width: 5px;
+  border: 1px solid navy;
 }
 
 footer {
