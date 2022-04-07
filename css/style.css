@@ -27,7 +27,6 @@ h2 {
 }
 
 h3 {
-  background-color: rgb(157, 216, 255);
   padding: 5px;
   font-size: 15px;
   font-weight: bold;
@@ -35,11 +34,16 @@ h3 {
   border-width: 3px;
 }
 
-div {
+section {
   padding: 5px;
   font-size: 15px;
   text-align: center;
   display: inline-block;
+}
+
+div {
+  padding: 5px;
+  font-size: 15px;
 }
 
 .about {
@@ -47,14 +51,12 @@ div {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  display: inline-block;
 }
 
 p {
   padding: 5px;
   font-size: 15px;
-  font-weight: bold;
-  text-align: center;
+  text-align: left;
   border: 2px solid navy;
 }
 
@@ -62,15 +64,16 @@ ul {
   padding: 5px;
   font-size: 15px;
   border: 2px solid navy;
-  list-style-position: inside;
   list-style: disc;
+  text-align: left;
 }
 
 ol {
   padding: 5px;
   font-size: 15px;
-  list-style-position: inside;
-  list-style: disc;
+  list-style: number;
+  border: 2px solid navy;
+  text-align: left;
 }
 
 img {
@@ -80,10 +83,6 @@ img {
   padding: 5px;
   border: 2px solid navy;
   border-width: 5px;
-}
-
-section {
-  border: 1px solid navy;
 }
 
 footer {
